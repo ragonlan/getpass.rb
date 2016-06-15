@@ -2,7 +2,7 @@
 #
 module Puppet::Parser::Functions
   newfunction(:getpass, :type => :rvalue, :doc => <<-EOS
-    Retorna una cadena aletaroia de tamanno 15.
+      Return a variable length password. Default is 15 characters.
     EOS
   ) do |arguments|
     raise(Puppet::ParseError, "getpass(): Wrong number of arguments " +
